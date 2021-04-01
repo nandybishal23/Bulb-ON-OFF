@@ -7,7 +7,6 @@
   body{
     color: #fff;
     height: 100%;
-    overflow: hidden;
     background: #333641;
     display: grid;
     place-items: center;
