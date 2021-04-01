@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+button { padding:10px; margin:60px; background-color:orange; }
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>BULB ON-OFF || BIG-B Development</title>
+</head>
+<body>
+    <div class="big">
+       <h1>BIG BULB</h1> 
+    </div>  
+    
+        <div class="a">
+            
+            <div class="img">
+                <img id="bulb" src="of.png"  height="400px">
+            </div>   
+            <div class="button">
+                <button class="o" onclick="light(1)">Turn ON</button>
+                <button class="f" onclick="light(0)">Turn OF</button>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2021 The BIG BISHAL Web Development.</p>
+          </footer>
+   
+</body>
+<script>
+    function light(value)
+        {
+        var pic;
+            if(value == 0) 
+            {
+                pic="of.png";
+            }
+            else
+            {
+                pic="on.png";
+            }
+            document.getElementById('bulb').src=pic;
+        }
+    </script>
+    
+</html>

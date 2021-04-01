@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    user-select: none;
+  }
+  body{
+    color: #fff;
+    height: 100%;
+    overflow: hidden;
+    background: #333641;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .big{
+    background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-size: 4vw;
+font-family: "Source Sans Pro", sans-serif;
+animation: reveal 3000ms ease-in-out forwards 200ms,
+   glow 2500ms linear infinite 2000ms;
+  }
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  } 
+
+.a{
+    height: 550px;
+    width:470px;    
+    position: center;
+    background: white;
+    border-radius: 10px;    
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+ .img{
+     align-items: center;
+ }
+ img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+ .button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+ }
+ button{
+     cursor: pointer;
+     width: 100px;
+     font-size: 1.3em;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ button:hover{
+     background-color: coral;
+     transform: translateY(-2px);
+ }
+ .o{
+    box-shadow: rgba(235, 57, 3, 0.4) -5px 5px, rgba(240, 172, 46, 0.3) -10px 10px, rgba(240, 172, 46, 0.2) -15px 15px, rgba(240, 204, 46, 0.1) -20px 20px, rgba(240, 149, 46, 0.05) -25px 25px;
+ }
+ .f{
+    box-shadow: rgba(235, 57, 3, 0.4) 5px 5px, rgba(240, 172, 46, 0.3) 10px 10px, rgba(240, 172, 46, 0.2) 15px 15px, rgba(240, 204, 46, 0.1) -20px 20px, rgba(240, 149, 46, 0.05) 25px 25px;
+ }
+ footer{
+    position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: BLACK;
+	color: white;
+	text-align: center;
+  }
